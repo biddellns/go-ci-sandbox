@@ -23,10 +23,9 @@ jobs:
     steps:
       - run:
           name: Login into host
-          command: ssh $PROD_USER@$PROD_HOST
-      - run:
-          name: Echo to test connection
-          command: echo "Hello World"
+          command: |
+            ssh $PROD_USER@$PROD_HOST '
+            echo "Hello world"'
 
 workflows:
   version: 2
