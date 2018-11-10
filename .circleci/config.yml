@@ -21,7 +21,7 @@ jobs:
     machine:
       enabled: true
     steps:
-      - run: ssh $PROD_USER@$PROD_HOST
+      - run:
           name: Login into host
           command: ssh $PROD_USER@$PROD_HOST
       - run:
