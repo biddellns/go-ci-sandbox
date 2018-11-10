@@ -13,3 +13,7 @@
 
 # Random linux stuff
 tags
+
+# Intellij
+.idea/
+*.iml
